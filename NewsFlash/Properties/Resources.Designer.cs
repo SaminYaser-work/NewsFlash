@@ -71,6 +71,15 @@ namespace NewsFlash.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to NewsFlash is a RSS Feedreader. It is free and open-source and licensed under GNU Public License 3.0..
+        /// </summary>
+        internal static string aboutDescription {
+            get {
+                return ResourceManager.GetString("aboutDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to http://www.cnbc.com/id/19746125/device/rss/rss.xml.
         /// </summary>
         internal static string bus1Link {

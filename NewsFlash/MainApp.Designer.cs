@@ -233,6 +233,7 @@
             this.btnAboutNewsFlash.Text = "About";
             this.btnAboutNewsFlash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAboutNewsFlash.UseVisualStyleBackColor = false;
+            this.btnAboutNewsFlash.Click += new System.EventHandler(this.btnAboutNewsFlash_Click);
             this.btnAboutNewsFlash.MouseEnter += new System.EventHandler(this.btnAboutNewsFlash_MouseEnter);
             this.btnAboutNewsFlash.MouseLeave += new System.EventHandler(this.btnAboutNewsFlash_MouseLeave);
             // 

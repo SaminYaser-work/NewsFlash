@@ -497,6 +497,20 @@ namespace NewsFlash
             Process.Start(openLink);
         }
 
+        // Account info form
+        private void rjCircularPictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            AccountInfo ai = new AccountInfo();
+            ai.ShowDialog();
+        }
+
+        // About form
+        private void btnAboutNewsFlash_Click(object sender, EventArgs e)
+        {
+            About a = new About();
+            a.ShowDialog();
+        }
+
 
         // Button effects
         private void btnAddNewFeed_Enter(object sender, EventArgs e)
@@ -589,14 +603,5 @@ namespace NewsFlash
         {
             btnOpenArticle.BackColor = ColorTheme.Medium;
         }
-
-        private void rjCircularPictureBox1_MouseClick(object sender, MouseEventArgs e)
-        {
-            //SignUp s = new SignUp();
-            //s.Show();
-            AccountInfo ai = new AccountInfo();
-            ai.ShowDialog();
-        }
-
     }
 }
