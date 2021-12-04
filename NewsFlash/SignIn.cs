@@ -163,7 +163,7 @@ namespace NewsFlash
             this.Hide();
             SignUp su = new SignUp();
             su.ShowDialog();
-            Environment.Exit(0);
+            this.Show();
         }
     }
 }

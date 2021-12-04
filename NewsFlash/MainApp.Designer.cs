@@ -326,6 +326,7 @@
             this.spTreeView.Name = "spTreeView";
             this.spTreeView.Size = new System.Drawing.Size(189, 246);
             this.spTreeView.TabIndex = 0;
+            this.spTreeView.TabStop = false;
             this.spTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.spTreeView_AfterSelect);
             // 
             // fpnlCards

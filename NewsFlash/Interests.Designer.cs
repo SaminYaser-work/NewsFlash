@@ -57,7 +57,7 @@
             // 
             this.chkWorld.AutoSize = true;
             this.chkWorld.Depth = 0;
-            this.chkWorld.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.chkWorld.Font = new System.Drawing.Font("Nazanintar", 11F);
             this.chkWorld.Location = new System.Drawing.Point(73, 78);
             this.chkWorld.Margin = new System.Windows.Forms.Padding(0);
             this.chkWorld.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -224,6 +224,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximumSize = new System.Drawing.Size(415, 285);
+            this.MinimumSize = new System.Drawing.Size(415, 285);
             this.Name = "Interests";
             this.Text = "Interests";
             this.ResumeLayout(false);

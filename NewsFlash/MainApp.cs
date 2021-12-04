@@ -41,6 +41,7 @@ namespace NewsFlash
             pnlBtnAbout.Visible = false;
 
 
+
             // Database related
             AddCategoryNodes();
             UpdateSidePanel(News.GetDataTable(GetAllFeedsQuery));
@@ -106,6 +107,7 @@ namespace NewsFlash
 
             // Treeview
             spTreeView.BackColor = ColorTheme.Hard;
+            spTreeView.LineColor = ColorTheme.Button;
 
             // Text (label, etc...)
             spTreeView.ForeColor = ColorTheme.Text;

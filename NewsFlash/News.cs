@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -19,16 +18,7 @@ namespace NewsFlash
         // Current user info
         private static string accEmail = "";
 
-
-        // Database test - remove later
-        //public static string accountName = "user1";
-
         public static string cs = ConfigurationManager.ConnectionStrings["database"].ConnectionString;
-
-        public static void LoadSettings()
-        {
-
-        }
 
         // Fetch datatable from DB
         private static SqlConnection con;

@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace NewsFlash
@@ -15,6 +11,80 @@ namespace NewsFlash
         public AccountInfo()
         {
             InitializeComponent();
+
+            SetTheme(Settings.colorTheme);
+
+            ShowInfo();
+            GetPicture();
+        }
+
+        private void ShowInfo()
+        {
+            string getAccInfoQuery = $"Select * from {News.AccountsTable} where EMAIL='{News.AccEmail}'";
+            DataTable dt = new DataTable();
+            dt = News.GetDataTable(getAccInfoQuery);
+
+            lblUsername.Text = dt.Rows[0]["NAME"].ToString();
+            txtBoxPass.Text = dt.Rows[0]["PASSWORD"].ToString();
+            txtBoxEmail.Text = News.AccEmail;
+
+            txtBoxEmail.ReadOnly = true;
+            txtBoxPass.ReadOnly = true;
+        }
+
+        private void GetPicture()
+        {
+            if (News.AccEmail == "")
+            {
+                pbPic.Image = Properties.Resources.Default_Pic;
+                return;
+            }
+
+            string getPictureQuery = $"Select PICTURE from {News.AccountsTable} where EMAIL='{News.AccEmail}'";
+            DataTable dt = new DataTable();
+            dt = News.GetDataTable(getPictureQuery);
+            DataRow dr = dt.Rows[0];
+
+            if (DBNull.Value.Equals(dr["PICTURE"]))
+            {
+                pbPic.Image = Properties.Resources.Default_Pic;
+            }
+            else
+            {
+                byte[] b = new byte[0];
+                b = (byte[])(dr["PICTURE"]);
+                MemoryStream ms = new MemoryStream(b);
+                pbPic.Image = Image.FromStream(ms);
+            }
+        }
+
+        private void SetTheme(ColorTheme.Theme theme)
+        {
+            ColorTheme.ChangeTheme(theme);
+
+            this.BackColor = ColorTheme.Soft;
+
+            lblTitle.ForeColor = ColorTheme.Text;
+            lblUsername.ForeColor = ColorTheme.Text;
+            lblEmail.ForeColor = ColorTheme.Text;
+            lblPassword.ForeColor = ColorTheme.Text;
+
+            pnlMain.BackColor = ColorTheme.Medium;
+            pnlSecond.BackColor = ColorTheme.Soft;
+
+            btnLogOut.BackColor = ColorTheme.Button;
+            btnLogOut.ForeColor = ColorTheme.Text;
+
+            pbPic.BorderColor = ColorTheme.Button;
+            pbPic.BorderColor2 = ColorTheme.Button;
+
+            txtBoxEmail.BackColor = ColorTheme.Medium;
+            txtBoxEmail.ForeColor = ColorTheme.Text;
+            txtBoxPass.BackColor = ColorTheme.Medium;
+            txtBoxPass.ForeColor = ColorTheme.Text;
+
+            btnReveal.ForeColor = ColorTheme.Button;
+            btnReveal.BackColor = ColorTheme.Soft;
         }
 
         private void rjButton1_Click(object sender, EventArgs e)
@@ -27,6 +97,11 @@ namespace NewsFlash
             }
 
             Application.Restart();
+        }
+
+        private void btnReveal_Click(object sender, EventArgs e)
+        {
+            txtBoxPass.UseSystemPasswordChar = false;
         }
     }
 }
