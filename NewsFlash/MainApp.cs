@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
 using System.Drawing;
@@ -11,7 +10,6 @@ namespace NewsFlash
     public partial class MainApp : Form
     {
         private RSSFeed feed;
-        //List<FeedItem> feedList;
         private Cards[] cards;
         private string feedLinkThatMightGetDeleted;
         private string feedLinkThatMightGetShared;
@@ -25,7 +23,6 @@ namespace NewsFlash
 
             // Initilization
             feed = new RSSFeed();
-            //feedList = new List<FeedItem>();
             cards = new Cards[Settings.NewsLimit];
             for (int i = 0; i < cards.Length; i++)
             {
@@ -55,6 +52,12 @@ namespace NewsFlash
             SetTheme(Settings.colorTheme);
         }
 
+        // Loads the profile picture
+        private void MainApp_Load(object sender, EventArgs e)
+        {
+            GetPicture();
+        }
+
         // Gets the settings for the user from DB
         private void GetSettings()
         {
@@ -74,9 +77,7 @@ namespace NewsFlash
             else if (dt.Rows.Count == 0)
             {
                 // New user
-                // TODO: set default settings
-                //MessageBox.Show("Database error. No settings found.");
-                string setDefSettingsQuery = $"INSERT INTO {News.SettingsTable} VALUES('{News.AccEmail}', 1, 5)";
+                string setDefSettingsQuery = $"INSERT INTO {News.SettingsTable} VALUES('{News.AccEmail}', 0, 5)";
                 int result = News.ExecuteQuery(setDefSettingsQuery);
                 if (result < 0)
                 {
@@ -168,7 +169,7 @@ namespace NewsFlash
 
             if (cardInfo == null)
             {
-                MessageBox.Show("Unable to load feed.");
+                MessageBox.Show("Unable to load feed. Link is invalid or check your internet connection.", "Failed to load feed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -595,9 +596,5 @@ namespace NewsFlash
             ai.ShowDialog();
         }
 
-        private void MainApp_Load(object sender, EventArgs e)
-        {
-            GetPicture();
-        }
     }
 }

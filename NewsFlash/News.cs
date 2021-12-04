@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -53,8 +54,6 @@ namespace NewsFlash
             con.Close();
             return result;
         }
-
-
 
         public enum NewsCategories
         {

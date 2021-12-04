@@ -71,6 +71,42 @@ namespace NewsFlash.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to http://www.cnbc.com/id/19746125/device/rss/rss.xml.
+        /// </summary>
+        internal static string bus1Link {
+            get {
+                return ResourceManager.GetString("bus1Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CNBC.
+        /// </summary>
+        internal static string bus1Name {
+            get {
+                return ResourceManager.GetString("bus1Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://prod-qt-images.s3.amazonaws.com/production/bloombergquint/feed.xml.
+        /// </summary>
+        internal static string bus2Link {
+            get {
+                return ResourceManager.GetString("bus2Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bloomberg.
+        /// </summary>
+        internal static string bus2Name {
+            get {
+                return ResourceManager.GetString("bus2Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Default_Pic {
@@ -81,12 +117,84 @@ namespace NewsFlash.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC.
+        /// </summary>
+        internal static string health1Link {
+            get {
+                return ResourceManager.GetString("health1Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WebMD.
+        /// </summary>
+        internal static string health1Name {
+            get {
+                return ResourceManager.GetString("health1Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/section/health/rss.xml.
+        /// </summary>
+        internal static string health2Link {
+            get {
+                return ResourceManager.GetString("health2Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NYT - Health.
+        /// </summary>
+        internal static string health2Name {
+            get {
+                return ResourceManager.GetString("health2Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon icon {
             get {
                 object obj = ResourceManager.GetObject("icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://www.realwire.com/rss/?id=488.
+        /// </summary>
+        internal static string lifestyle1Link {
+            get {
+                return ResourceManager.GetString("lifestyle1Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RealWire.
+        /// </summary>
+        internal static string lifestyle1Name {
+            get {
+                return ResourceManager.GetString("lifestyle1Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://www.gq.com/feed/style/rss.
+        /// </summary>
+        internal static string lifestyle2Link {
+            get {
+                return ResourceManager.GetString("lifestyle2Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GQ.
+        /// </summary>
+        internal static string lifestyle2Name {
+            get {
+                return ResourceManager.GetString("lifestyle2Name", resourceCulture);
             }
         }
         
@@ -157,6 +265,78 @@ namespace NewsFlash.Properties {
             get {
                 object obj = ResourceManager.GetObject("share_this", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://www.espn.com/espn/rss/soccer/news.
+        /// </summary>
+        internal static string sports1Link {
+            get {
+                return ResourceManager.GetString("sports1Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ESPN Soccer.
+        /// </summary>
+        internal static string sports1Name {
+            get {
+                return ResourceManager.GetString("sports1Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://crickettimes.com/feed/.
+        /// </summary>
+        internal static string sports2Link {
+            get {
+                return ResourceManager.GetString("sports2Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CricketTimes.
+        /// </summary>
+        internal static string sports2Name {
+            get {
+                return ResourceManager.GetString("sports2Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://feeds.bbci.co.uk/news/world/rss.xml.
+        /// </summary>
+        internal static string world1Link {
+            get {
+                return ResourceManager.GetString("world1Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BBC.
+        /// </summary>
+        internal static string world1Name {
+            get {
+                return ResourceManager.GetString("world1Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.aljazeera.com/xml/rss/all.xml.
+        /// </summary>
+        internal static string world2Link {
+            get {
+                return ResourceManager.GetString("world2Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Al Jazeera.
+        /// </summary>
+        internal static string world2Name {
+            get {
+                return ResourceManager.GetString("world2Name", resourceCulture);
             }
         }
     }

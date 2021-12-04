@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News reader mk 2", "News reader mk 2\News reader mk 2.csproj", "{D69D7C3A-EBFB-4950-B25F-F7F7142DEEE2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsFlash", "NewsFlash\NewsFlash.csproj", "{1CB696B7-C3BD-44A1-AF23-12DFC86E609A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{779E6A4A-4CD6-48D2-B9AE-00E21328C7AB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +16,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D69D7C3A-EBFB-4950-B25F-F7F7142DEEE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D69D7C3A-EBFB-4950-B25F-F7F7142DEEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D69D7C3A-EBFB-4950-B25F-F7F7142DEEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D69D7C3A-EBFB-4950-B25F-F7F7142DEEE2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1CB696B7-C3BD-44A1-AF23-12DFC86E609A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1CB696B7-C3BD-44A1-AF23-12DFC86E609A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CB696B7-C3BD-44A1-AF23-12DFC86E609A}.Release|Any CPU.ActiveCfg = Release|Any CPU

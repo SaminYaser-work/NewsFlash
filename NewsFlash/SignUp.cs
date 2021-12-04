@@ -57,14 +57,12 @@ namespace NewsFlash
                 MessageBox.Show("Password do not match", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
+                // Don't use News.ExecuteQuery Method
                 SqlConnection con = new SqlConnection(News.cs);
-
                 News.AccEmail = txtEmail.Text;
                 string createNewAccountQuery = $"INSERT INTO {News.AccountsTable} VALUES('{txtEmail.Text}', '{txtPassword.Text}', '{txtBoxUsername.Text}', 0, @image)";
-
                 SqlCommand cmd = new SqlCommand(createNewAccountQuery, con);
                 cmd.Parameters.AddWithValue("@image", SavePhoto());
-
                 con.Open();
                 int result = cmd.ExecuteNonQuery();
                 if (result < 0)
@@ -72,6 +70,11 @@ namespace NewsFlash
                     MessageBox.Show("Unable to sign up data to the database");
                 }
                 con.Close();
+
+                this.Hide();
+                Interests i = new Interests();
+                i.ShowDialog();
+                this.Close();
             }
         }
 

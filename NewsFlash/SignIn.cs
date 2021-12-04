@@ -112,7 +112,7 @@ namespace NewsFlash
 
                     MainApp m = new MainApp();
                     m.ShowDialog();
-                    this.Close();
+                    Environment.Exit(0);
                 }
 
                 else
@@ -123,7 +123,7 @@ namespace NewsFlash
             }
             else
             {
-                MessageBox.Show("Username Or Password Must Be Incorrect Or Empty!", "LogIn Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Username Or Password is not correct Or Empty!", "LogIn Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -163,7 +163,7 @@ namespace NewsFlash
             this.Hide();
             SignUp su = new SignUp();
             su.ShowDialog();
-            this.Show();
+            Environment.Exit(0);
         }
     }
 }

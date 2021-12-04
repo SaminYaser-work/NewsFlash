@@ -9,25 +9,33 @@ namespace NewsFlash
         public CardInfo[] GetCards(FeedItem feedItem)
         {
 
-            // Async is hard
-            var feed = FeedReader.Read(feedItem.FeedUrl);
-
-            int i = 0;
-            foreach (var item in feed.Items)
+            try
             {
-                cardInfo[i] = new CardInfo();
+                // Async is hard
+                var feed = FeedReader.Read(feedItem.FeedUrl);
 
-                cardInfo[i].Publisher = feedItem.FeedName;
-                cardInfo[i].Title = item.Title.ToString();
-                cardInfo[i].PublishDate = item.PublishingDate.ToString();
-                cardInfo[i].Summary = item.Description;
-                cardInfo[i].Link = item.Link;
-                cardInfo[i].Category = feedItem.FeedCategory;
+                int i = 0;
+                foreach (var item in feed.Items)
+                {
+                    cardInfo[i] = new CardInfo();
 
-                i++;
-                if (i == cardInfo.Length) break;
+                    cardInfo[i].Publisher = feedItem.FeedName;
+                    cardInfo[i].Title = item.Title.ToString();
+                    cardInfo[i].PublishDate = item.PublishingDate.ToString();
+                    cardInfo[i].Summary = item.Description;
+                    cardInfo[i].Link = item.Link;
+                    cardInfo[i].Category = feedItem.FeedCategory;
+
+                    i++;
+                    if (i == cardInfo.Length) break;
+                }
+                return cardInfo;
             }
-            return cardInfo;
+            catch (System.Exception e)
+            {
+                return null;
+            }
+
         }
     }
 }
