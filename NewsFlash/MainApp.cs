@@ -147,7 +147,8 @@ namespace NewsFlash
             btnAddNewFeed.IconColor = ColorTheme.Text;
             btnSettings.IconColor = ColorTheme.Text;
             btnAboutNewsFlash.IconColor = ColorTheme.Text;
-            //pbLogo.Image = ColorTheme.Logo;
+            pbProfilePic.BorderColor = ColorTheme.Button;
+            pbProfilePic.BorderColor2 = ColorTheme.Button;
         }
 
         private void AddCategoryNodes()
@@ -310,7 +311,7 @@ namespace NewsFlash
             {
                 RemoveFromFav(info.Link);
                 GetFavourites();
-                MessageBox.Show("Removed from favourites.");
+                //MessageBox.Show("Removed from favourites.");
                 return;
             }
 
@@ -325,17 +326,12 @@ namespace NewsFlash
 
         private void RemoveFromFav(string url)
         {
-            string deleteFromFavQuery = $"DELETE FROM {News.FavTable} WHERE ACCNAME='{News.AccEmail}' AND LINK='{url}'";
-            //SqlConnection con = new SqlConnection(News.cs);
-            //SqlCommand cmd = new SqlCommand(deleteFromFavQuery, con);
+            string deleteFromFavQuery = $"DELETE FROM {News.FavTable} WHERE EMAIL='{News.AccEmail}' AND LINK='{url}'";
             int result = News.ExecuteQuery(deleteFromFavQuery);
-            //con.Open();
-            //int result = cmd.ExecuteNonQuery();
             if (result < 0)
             {
-                MessageBox.Show("Unable to delete the feed.");
+                MessageBox.Show("Unable to delete the feed.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //con.Close();
         }
 
         private void card_Click(object sender, EventArgs e, CardInfo cardInfo)
@@ -454,6 +450,8 @@ namespace NewsFlash
                     MessageBox.Show("Unable to delete the feed.");
 
                 fpnlCards.Controls.Clear();
+                pnlMainHeader.Visible = false;
+                pnlMainSum.Visible = false;
 
                 string deleteFeedQUery = $"DELETE FROM FEED_TABLE WHERE FEEDLINK='{feedLinkThatMightGetDeleted}'";
                 int result = News.ExecuteQuery(deleteFeedQUery);

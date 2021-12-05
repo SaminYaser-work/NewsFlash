@@ -71,11 +71,11 @@
             // 
             // pbGithub
             // 
-            this.pbGithub.BackColor = System.Drawing.SystemColors.Control;
-            this.pbGithub.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pbGithub.IconChar = FontAwesome.Sharp.IconChar.GithubSquare;
             this.pbGithub.IconColor = System.Drawing.SystemColors.ControlText;
             this.pbGithub.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbGithub.BackColor = System.Drawing.SystemColors.Control;
+            this.pbGithub.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pbGithub.IconSize = 52;
             this.pbGithub.Location = new System.Drawing.Point(171, 278);
             this.pbGithub.Name = "pbGithub";
@@ -96,10 +96,10 @@
             // 
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(35, 264);
+            this.materialDivider1.Location = new System.Drawing.Point(35, 262);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.Hover;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(333, 1);
+            this.materialDivider1.Size = new System.Drawing.Size(333, 2);
             this.materialDivider1.TabIndex = 5;
             this.materialDivider1.Text = "materialDivider1";
             // 

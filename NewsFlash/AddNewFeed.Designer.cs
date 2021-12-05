@@ -36,6 +36,7 @@
             this.txtBoxNFLink = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblLink = new System.Windows.Forms.Label();
+            this.lblCategory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // directorySearcher1
@@ -140,11 +141,22 @@
             this.lblLink.TabIndex = 9;
             this.lblLink.Text = "RSS Link";
             // 
+            // lblCategory
+            // 
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Location = new System.Drawing.Point(74, 153);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(72, 20);
+            this.lblCategory.TabIndex = 9;
+            this.lblCategory.Text = "Category";
+            // 
             // AddNewFeedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 308);
+            this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.lblLink);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtBoxNFLink);
@@ -172,5 +184,6 @@
         private System.Windows.Forms.TextBox txtBoxNFLink;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblLink;
+        private System.Windows.Forms.Label lblCategory;
     }
 }

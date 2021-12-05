@@ -227,6 +227,7 @@
             this.MaximumSize = new System.Drawing.Size(415, 285);
             this.MinimumSize = new System.Drawing.Size(415, 285);
             this.Name = "Interests";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interests";
             this.ResumeLayout(false);
             this.PerformLayout();

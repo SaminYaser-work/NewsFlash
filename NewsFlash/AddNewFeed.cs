@@ -26,14 +26,11 @@ namespace NewsFlash
 
             txtBoxNFLink.BackColor = ColorTheme.Hard;
             txtBoxNFLink.ForeColor = ColorTheme.Inactive;
-            //txtBoxNFLink.PlaceholderColor = ColorTheme.Inactive;
-            //txtBoxNFLink.BorderFocusColor = ColorTheme.Button;
             txtBoxNFName.BackColor = ColorTheme.Hard;
             txtBoxNFName.ForeColor = ColorTheme.Inactive;
-            //txtBoxNFName.PlaceholderColor = ColorTheme.Inactive;
-            //txtBoxNFName.BorderFocusColor = ColorTheme.Button;
             lblLink.ForeColor = ColorTheme.Text;
             lblName.ForeColor = ColorTheme.Text;
+            lblCategory.ForeColor = ColorTheme.Text;
 
             cbFeedCategory.BackColor = ColorTheme.Hard;
             cbFeedCategory.ForeColor = ColorTheme.Inactive;

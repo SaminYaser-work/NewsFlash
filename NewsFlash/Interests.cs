@@ -61,7 +61,7 @@ namespace NewsFlash
             this.Hide();
             MainApp m = new MainApp();
             m.ShowDialog();
-            this.Close();
+            Environment.Exit(0);
         }
 
         private void AddFeed(string name, string link, string category)

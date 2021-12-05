@@ -98,7 +98,7 @@
             this.btnSave.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnSave.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnSave.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSave.BorderRadius = 0;
+            this.btnSave.BorderRadius = 9;
             this.btnSave.BorderSize = 0;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -118,7 +118,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnCancel.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnCancel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnCancel.BorderRadius = 0;
+            this.btnCancel.BorderRadius = 9;
             this.btnCancel.BorderSize = 0;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

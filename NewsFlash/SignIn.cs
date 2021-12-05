@@ -49,16 +49,10 @@ namespace NewsFlash
                 DataRow dr = dt.Rows[0];
                 News.AccEmail = dr["EMAIL"].ToString();
 
-                MessageBox.Show("Auto login activated.");
-
                 this.Hide();
                 MainApp m = new MainApp();
                 m.ShowDialog();
                 Environment.Exit(0);
-
-                // TODO: Exit app after when m is closed
-                //this.Show();
-                //Application.Exit();
             }
         }
 
@@ -91,7 +85,7 @@ namespace NewsFlash
                 if (dr.HasRows == true)
                 {
                     this.Hide();
-                    MessageBox.Show("LOGIN SUCCESSFULL", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("LOGIN SUCCESSFULL", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     News.AccEmail = txtBoxEmail.Text;
 
@@ -117,13 +111,13 @@ namespace NewsFlash
 
                 else
                 {
-                    MessageBox.Show("LOGIN Failed", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Email or password did not match with any existing account.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 con.Close();
             }
             else
             {
-                MessageBox.Show("Username Or Password is not correct Or Empty!", "LogIn Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please fill out the necessary fields", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -163,7 +157,7 @@ namespace NewsFlash
             this.Hide();
             SignUp su = new SignUp();
             su.ShowDialog();
-            this.Show();
+            // this.Show();
         }
     }
 }
