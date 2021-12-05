@@ -39,6 +39,7 @@
             this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
+            this.lbl2FA = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPic)).BeginInit();
             this.pnlSecond.SuspendLayout();
@@ -82,6 +83,7 @@
             this.pnlMain.Controls.Add(this.lblUsername);
             this.pnlMain.Controls.Add(this.btnLogOut);
             this.pnlMain.Controls.Add(this.pnlSecond);
+            this.pnlMain.Controls.Add(this.lbl2FA);
             this.pnlMain.Location = new System.Drawing.Point(19, 74);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(475, 277);
@@ -175,6 +177,16 @@
             this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "Email";
             // 
+            // lbl2FA
+            // 
+            this.lbl2FA.AutoSize = true;
+            this.lbl2FA.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2FA.Location = new System.Drawing.Point(91, 53);
+            this.lbl2FA.Name = "lbl2FA";
+            this.lbl2FA.Size = new System.Drawing.Size(79, 20);
+            this.lbl2FA.TabIndex = 1;
+            this.lbl2FA.Text = "2FA Status";
+            // 
             // AccountInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -210,5 +222,6 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button btnReveal;
+        private System.Windows.Forms.Label lbl2FA;
     }
 }

@@ -16,6 +16,24 @@ namespace NewsFlash
 
             ShowInfo();
             GetPicture();
+            Set2FAStatus();
+        }
+
+        private void Set2FAStatus()
+        {
+            string get2FAStatusQuery = $"SELECT * FROM {News.AccountsTable} WHERE EMAIL='{News.AccEmail}'";
+            DataTable dt = new DataTable();
+            dt = News.GetDataTable(get2FAStatusQuery);
+            if (dt.Rows[0]["HAS2FA"].ToString() == "0")
+            {
+                lbl2FA.Text = "Unverified account";
+                lbl2FA.ForeColor = ColorTheme.Inactive;
+            }
+            else
+            {
+                lbl2FA.Text = "Verified account";
+                lbl2FA.ForeColor = ColorTheme.Accent;
+            }
         }
 
         private void ShowInfo()
