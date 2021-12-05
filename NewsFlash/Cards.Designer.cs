@@ -79,13 +79,13 @@
             // 
             // faPbCardIcon
             // 
+            this.faPbCardIcon.Name = "faPbCardIcon";
+            this.faPbCardIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(229)))));
             this.faPbCardIcon.IconChar = FontAwesome.Sharp.IconChar.Music;
             this.faPbCardIcon.IconColor = System.Drawing.Color.White;
             this.faPbCardIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.faPbCardIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(229)))));
             this.faPbCardIcon.IconSize = 20;
             this.faPbCardIcon.Location = new System.Drawing.Point(7, 12);
-            this.faPbCardIcon.Name = "faPbCardIcon";
             this.faPbCardIcon.Size = new System.Drawing.Size(20, 20);
             this.faPbCardIcon.TabIndex = 2;
             this.faPbCardIcon.TabStop = false;
@@ -93,14 +93,14 @@
             // 
             // btnFav
             // 
+            this.btnFav.Name = "btnFav";
+            this.btnFav.FlatAppearance.BorderSize = 0;
+            this.btnFav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFav.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.btnFav.IconColor = System.Drawing.Color.Orange;
             this.btnFav.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFav.FlatAppearance.BorderSize = 0;
-            this.btnFav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFav.IconSize = 20;
             this.btnFav.Location = new System.Drawing.Point(7, 37);
-            this.btnFav.Name = "btnFav";
             this.btnFav.Size = new System.Drawing.Size(20, 20);
             this.btnFav.TabIndex = 3;
             this.btnFav.UseVisualStyleBackColor = true;

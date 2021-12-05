@@ -126,6 +126,15 @@ namespace NewsFlash.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Failed to send a code to given email. Please note that, due to no SMTP server, renowned email services like gmail, outlook will not work. Please use something like &quot;temp-mail.org&quot; or similar websites to use this feature..
+        /// </summary>
+        internal static string emailErrorMessage {
+            get {
+                return ResourceManager.GetString("emailErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC.
         /// </summary>
         internal static string health1Link {

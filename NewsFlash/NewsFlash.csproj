@@ -347,7 +347,12 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="SynidcationFeedXmlReader.cs" />
+    <Compile Include="TwoFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwoFA.Designer.cs">
+      <DependentUpon>TwoFA.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -388,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwoFA.resx">
+      <DependentUpon>TwoFA.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>

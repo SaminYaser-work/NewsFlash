@@ -72,9 +72,9 @@ namespace NewsFlash
                 con.Close();
 
                 this.Hide();
-                Interests i = new Interests();
-                i.ShowDialog();
-                this.Close();
+                TwoFA twoFA = new TwoFA();
+                twoFA.ShowDialog();
+                Environment.Exit(0);
             }
         }
 

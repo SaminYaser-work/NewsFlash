@@ -412,10 +412,10 @@
             // 
             // btnOpenArticle
             // 
-            this.btnOpenArticle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOpenArticle.IconFont = FontAwesome.Sharp.IconFont.Brands;
             this.btnOpenArticle.IconChar = FontAwesome.Sharp.IconChar.Chrome;
             this.btnOpenArticle.IconColor = System.Drawing.Color.White;
+            this.btnOpenArticle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOpenArticle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnOpenArticle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOpenArticle.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
@@ -438,10 +438,10 @@
             // 
             // btnShare
             // 
-            this.btnShare.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnShare.IconChar = FontAwesome.Sharp.IconChar.Copy;
             this.btnShare.IconColor = System.Drawing.Color.White;
             this.btnShare.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnShare.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnShare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnShare.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShare.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
@@ -499,12 +499,12 @@
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
             this.iconPictureBox1.IconColor = System.Drawing.Color.RoyalBlue;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.iconPictureBox1.IconSize = 300;
             this.iconPictureBox1.Location = new System.Drawing.Point(93, 106);
             this.iconPictureBox1.Name = "iconPictureBox1";
