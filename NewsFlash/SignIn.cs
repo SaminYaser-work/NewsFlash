@@ -157,7 +157,7 @@ namespace NewsFlash
             this.Hide();
             SignUp su = new SignUp();
             su.ShowDialog();
-            // this.Show();
+            this.Show();
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+using System.Data;
 
 namespace NewsFlash
 {
@@ -57,6 +58,20 @@ namespace NewsFlash
                 MessageBox.Show("Password do not match", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
+
+                // Checking for duplicate emails
+                string getAccountQuery = $"SELECT * FROM {News.AccountsTable} WHERE EMAIL='{txtEmail.Text}'";
+                DataTable dt = new DataTable();
+                dt = News.GetDataTable(getAccountQuery);
+
+                if (dt.Rows.Count > 0)
+                {
+                    MessageBox.Show("An account already exists with this email.", "Account Creation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+
+
                 // Don't use News.ExecuteQuery Method
                 SqlConnection con = new SqlConnection(News.cs);
                 News.AccEmail = txtEmail.Text;
