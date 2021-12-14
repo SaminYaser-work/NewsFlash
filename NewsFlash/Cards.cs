@@ -74,7 +74,9 @@ namespace NewsFlash
         private void SetIcon()
         {
             if (isFav)
+            {
                 btnFav.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            }
             else
                 btnFav.IconFont = FontAwesome.Sharp.IconFont.Auto;
         }

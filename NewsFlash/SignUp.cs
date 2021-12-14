@@ -23,7 +23,7 @@ namespace NewsFlash
             ColorTheme.ChangeTheme(ColorTheme.Theme.Dark);
 
             this.BackColor = ColorTheme.Soft;
-            btnChoosePic.BackColor = ColorTheme.Button;
+            btnContinue.BackColor = ColorTheme.Button;
             btnContinue.ForeColor = ColorTheme.Text;
             btnChoosePic.BackColor = ColorTheme.Inactive;
             btnChoosePic.ForeColor = ColorTheme.Text;

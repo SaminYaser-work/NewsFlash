@@ -56,7 +56,7 @@
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(337, 73);
             this.lblDescription.TabIndex = 1;
-            this.lblDescription.Text = "label1";
+            this.lblDescription.Text = "Description";
             // 
             // linkLabel1
             // 
@@ -71,11 +71,11 @@
             // 
             // pbGithub
             // 
+            this.pbGithub.BackColor = System.Drawing.SystemColors.Control;
+            this.pbGithub.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pbGithub.IconChar = FontAwesome.Sharp.IconChar.GithubSquare;
             this.pbGithub.IconColor = System.Drawing.SystemColors.ControlText;
             this.pbGithub.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pbGithub.BackColor = System.Drawing.SystemColors.Control;
-            this.pbGithub.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pbGithub.IconSize = 52;
             this.pbGithub.Location = new System.Drawing.Point(171, 278);
             this.pbGithub.Name = "pbGithub";

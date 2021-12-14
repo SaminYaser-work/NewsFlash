@@ -249,7 +249,7 @@
             this.btnSettings.ForeColor = System.Drawing.Color.White;
             this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Sun;
             this.btnSettings.IconColor = System.Drawing.Color.White;
-            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSettings.IconSize = 40;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.Location = new System.Drawing.Point(0, 472);
@@ -421,9 +421,9 @@
             this.btnOpenArticle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenArticle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenArticle.ForeColor = System.Drawing.Color.White;
-            this.btnOpenArticle.IconChar = FontAwesome.Sharp.IconChar.Uncharted;
+            this.btnOpenArticle.IconChar = FontAwesome.Sharp.IconChar.Chrome;
             this.btnOpenArticle.IconColor = System.Drawing.Color.White;
-            this.btnOpenArticle.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.btnOpenArticle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnOpenArticle.IconSize = 30;
             this.btnOpenArticle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnOpenArticle.Location = new System.Drawing.Point(346, 194);
@@ -534,7 +534,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewsFlash";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainApp_FormClosed);
-            //this.Load += new System.EventHandler(this.MainApp_Load);
             this.pnlTitleBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbProfilePic)).EndInit();
             this.pnlSidePanel.ResumeLayout(false);
