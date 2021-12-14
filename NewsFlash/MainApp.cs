@@ -49,15 +49,19 @@ namespace NewsFlash
             // FIXME: Takes to much time to load
             //FetchFeedsFromDB();
 
+            GetPicture();
+
             // Setting the theme
             SetTheme(Settings.colorTheme);
+
+            //this.Invalidate();
         }
 
         // Loads the profile picture
-        private void MainApp_Load(object sender, EventArgs e)
-        {
-            GetPicture();
-        }
+        //private void MainApp_Load(object sender, EventArgs e)
+        //{
+        //    GetPicture();
+        //}
 
         // Gets the settings for the user from DB
         private void GetSettings()
@@ -513,42 +517,42 @@ namespace NewsFlash
         // Button effects
         private void btnAddNewFeed_Enter(object sender, EventArgs e)
         {
-            btnAddNewFeed.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            //btnAddNewFeed.IconFont = FontAwesome.Sharp.IconFont.Solid;
             btnAddNewFeed.Padding = new Padding(20, 0, 0, 0);
             pnlBtnANF.Visible = true;
             btnAddNewFeed.BackColor = ColorTheme.Highlight;
         }
         private void btnAddNewFeed_Leave(object sender, EventArgs e)
         {
-            btnAddNewFeed.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            //btnAddNewFeed.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnAddNewFeed.Padding = new Padding(0, 0, 0, 0);
             pnlBtnANF.Visible = false;
             btnAddNewFeed.BackColor = ColorTheme.Hard;
         }
         private void btnFavorites_MouseEnter(object sender, EventArgs e)
         {
-            btnFavorites.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            //btnFavorites.IconFont = FontAwesome.Sharp.IconFont.Solid;
             btnFavorites.Padding = new Padding(20, 0, 0, 0);
             pnlBtnFav.Visible = true;
             btnFavorites.BackColor = ColorTheme.Highlight;
         }
         private void btnFavorites_MouseLeave(object sender, EventArgs e)
         {
-            btnFavorites.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            //btnFavorites.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnFavorites.Padding = new Padding(0, 0, 0, 0);
             pnlBtnFav.Visible = false;
             btnFavorites.BackColor = ColorTheme.Hard;
         }
         private void btnSettings_MouseEnter(object sender, EventArgs e)
         {
-            btnSettings.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            //btnSettings.IconFont = FontAwesome.Sharp.IconFont.Solid;
             btnSettings.Padding = new Padding(20, 0, 0, 0);
             pnlBtnSett.Visible = true;
             btnSettings.BackColor = ColorTheme.Highlight;
         }
         private void btnSettings_MouseLeave(object sender, EventArgs e)
         {
-            btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            //btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnSettings.Padding = new Padding(0, 0, 0, 0);
             pnlBtnSett.Visible = false;
             btnSettings.BackColor = ColorTheme.Hard;
@@ -556,7 +560,7 @@ namespace NewsFlash
 
         private void btnAboutNewsFlash_MouseEnter(object sender, EventArgs e)
         {
-            btnAboutNewsFlash.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            //btnAboutNewsFlash.IconFont = FontAwesome.Sharp.IconFont.Solid;
             btnAboutNewsFlash.Padding = new Padding(20, 0, 0, 0);
             pnlBtnAbout.Visible = true;
             btnAboutNewsFlash.BackColor = ColorTheme.Highlight;
@@ -564,31 +568,31 @@ namespace NewsFlash
 
         private void btnAboutNewsFlash_MouseLeave(object sender, EventArgs e)
         {
-            btnAboutNewsFlash.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            //btnAboutNewsFlash.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnAboutNewsFlash.Padding = new Padding(0, 0, 0, 0);
             pnlBtnAbout.Visible = false;
             btnAboutNewsFlash.BackColor = ColorTheme.Hard;
         }
         private void btnDeleteFeed_MouseEnter(object sender, EventArgs e)
         {
-            btnDeleteFeed.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            //btnDeleteFeed.IconFont = FontAwesome.Sharp.IconFont.Solid;
             btnDeleteFeed.BackColor = System.Drawing.Color.FromArgb(202, 2, 1);
         }
         private void btnDeleteFeed_MouseLeave(object sender, EventArgs e)
         {
-            btnDeleteFeed.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            //btnDeleteFeed.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnDeleteFeed.BackColor = ColorTheme.Hard;
         }
 
         private void btnShare_MouseEnter(object sender, EventArgs e)
         {
-            btnShare.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            //btnShare.IconFont = FontAwesome.Sharp.IconFont.Solid;
             btnShare.BackColor = ColorTheme.Button;
         }
 
         private void btnShare_MouseLeave(object sender, EventArgs e)
         {
-            btnShare.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            //btnShare.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnShare.BackColor = ColorTheme.Medium;
         }
 
@@ -600,6 +604,11 @@ namespace NewsFlash
         private void btnOpenArticle_MouseLeave(object sender, EventArgs e)
         {
             btnOpenArticle.BackColor = ColorTheme.Medium;
+        }
+
+        private void MainApp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Environment.Exit(0);
         }
     }
 }

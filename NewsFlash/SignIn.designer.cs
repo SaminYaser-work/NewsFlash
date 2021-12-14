@@ -196,6 +196,7 @@ namespace NewsFlash
             // 
             // SignIn
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(564, 482);
@@ -213,6 +214,7 @@ namespace NewsFlash
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(580, 521);
             this.MinimumSize = new System.Drawing.Size(580, 521);
             this.Name = "SignIn";

@@ -85,6 +85,7 @@
             // 
             // pbProfilePic
             // 
+            this.pbProfilePic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbProfilePic.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
             this.pbProfilePic.BorderColor = System.Drawing.Color.RoyalBlue;
             this.pbProfilePic.BorderColor2 = System.Drawing.Color.HotPink;
@@ -103,9 +104,6 @@
             // 
             // btnDeleteFeed
             // 
-            this.btnDeleteFeed.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.btnDeleteFeed.IconColor = System.Drawing.Color.White;
-            this.btnDeleteFeed.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDeleteFeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnDeleteFeed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeleteFeed.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
@@ -113,6 +111,9 @@
             this.btnDeleteFeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteFeed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteFeed.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteFeed.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            this.btnDeleteFeed.IconColor = System.Drawing.Color.White;
+            this.btnDeleteFeed.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDeleteFeed.IconSize = 30;
             this.btnDeleteFeed.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnDeleteFeed.Location = new System.Drawing.Point(242, 27);
@@ -213,9 +214,6 @@
             // 
             // btnAboutNewsFlash
             // 
-            this.btnAboutNewsFlash.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
-            this.btnAboutNewsFlash.IconColor = System.Drawing.Color.White;
-            this.btnAboutNewsFlash.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAboutNewsFlash.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAboutNewsFlash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnAboutNewsFlash.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -223,6 +221,9 @@
             this.btnAboutNewsFlash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAboutNewsFlash.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutNewsFlash.ForeColor = System.Drawing.Color.White;
+            this.btnAboutNewsFlash.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.btnAboutNewsFlash.IconColor = System.Drawing.Color.White;
+            this.btnAboutNewsFlash.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAboutNewsFlash.IconSize = 40;
             this.btnAboutNewsFlash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAboutNewsFlash.Location = new System.Drawing.Point(-1, 516);
@@ -239,9 +240,6 @@
             // 
             // btnSettings
             // 
-            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Cogs;
-            this.btnSettings.IconColor = System.Drawing.Color.White;
-            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -249,6 +247,9 @@
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Sun;
+            this.btnSettings.IconColor = System.Drawing.Color.White;
+            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Regular;
             this.btnSettings.IconSize = 40;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.Location = new System.Drawing.Point(0, 472);
@@ -265,9 +266,6 @@
             // 
             // btnFavorites
             // 
-            this.btnFavorites.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.btnFavorites.IconColor = System.Drawing.Color.White;
-            this.btnFavorites.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnFavorites.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnFavorites.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnFavorites.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -275,6 +273,9 @@
             this.btnFavorites.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFavorites.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFavorites.ForeColor = System.Drawing.Color.White;
+            this.btnFavorites.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.btnFavorites.IconColor = System.Drawing.Color.White;
+            this.btnFavorites.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnFavorites.IconSize = 40;
             this.btnFavorites.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFavorites.Location = new System.Drawing.Point(0, 384);
@@ -291,9 +292,6 @@
             // 
             // btnAddNewFeed
             // 
-            this.btnAddNewFeed.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            this.btnAddNewFeed.IconColor = System.Drawing.Color.White;
-            this.btnAddNewFeed.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAddNewFeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAddNewFeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnAddNewFeed.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -301,6 +299,9 @@
             this.btnAddNewFeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewFeed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewFeed.ForeColor = System.Drawing.Color.White;
+            this.btnAddNewFeed.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            this.btnAddNewFeed.IconColor = System.Drawing.Color.White;
+            this.btnAddNewFeed.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAddNewFeed.IconSize = 40;
             this.btnAddNewFeed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddNewFeed.Location = new System.Drawing.Point(0, 428);
@@ -412,9 +413,6 @@
             // 
             // btnOpenArticle
             // 
-            this.btnOpenArticle.IconFont = FontAwesome.Sharp.IconFont.Brands;
-            this.btnOpenArticle.IconChar = FontAwesome.Sharp.IconChar.Chrome;
-            this.btnOpenArticle.IconColor = System.Drawing.Color.White;
             this.btnOpenArticle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOpenArticle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnOpenArticle.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -423,6 +421,9 @@
             this.btnOpenArticle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenArticle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenArticle.ForeColor = System.Drawing.Color.White;
+            this.btnOpenArticle.IconChar = FontAwesome.Sharp.IconChar.Uncharted;
+            this.btnOpenArticle.IconColor = System.Drawing.Color.White;
+            this.btnOpenArticle.IconFont = FontAwesome.Sharp.IconFont.Regular;
             this.btnOpenArticle.IconSize = 30;
             this.btnOpenArticle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnOpenArticle.Location = new System.Drawing.Point(346, 194);
@@ -438,9 +439,6 @@
             // 
             // btnShare
             // 
-            this.btnShare.IconChar = FontAwesome.Sharp.IconChar.Copy;
-            this.btnShare.IconColor = System.Drawing.Color.White;
-            this.btnShare.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnShare.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnShare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
             this.btnShare.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -449,6 +447,9 @@
             this.btnShare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShare.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShare.ForeColor = System.Drawing.Color.White;
+            this.btnShare.IconChar = FontAwesome.Sharp.IconChar.Copy;
+            this.btnShare.IconColor = System.Drawing.Color.White;
+            this.btnShare.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnShare.IconSize = 30;
             this.btnShare.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnShare.Location = new System.Drawing.Point(387, 194);
@@ -499,12 +500,12 @@
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.RoyalBlue;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
             this.iconPictureBox1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.RoyalBlue;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 300;
             this.iconPictureBox1.Location = new System.Drawing.Point(93, 106);
             this.iconPictureBox1.Name = "iconPictureBox1";
@@ -532,7 +533,8 @@
             this.Name = "MainApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewsFlash";
-            this.Load += new System.EventHandler(this.MainApp_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainApp_FormClosed);
+            //this.Load += new System.EventHandler(this.MainApp_Load);
             this.pnlTitleBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbProfilePic)).EndInit();
             this.pnlSidePanel.ResumeLayout(false);

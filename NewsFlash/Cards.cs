@@ -15,6 +15,7 @@ namespace NewsFlash
             lblTitle.AutoEllipsis = true;
 
             SetTheme(ColorTheme.Theme.Dark);
+
         }
 
         public void SetCardTheme(ColorTheme.Theme theme)

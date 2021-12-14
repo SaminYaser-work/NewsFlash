@@ -59,8 +59,12 @@ namespace NewsFlash
 
 
             this.Hide();
+            //System.Threading.Thread.Sleep(1000); // May fix a bug
+
             MainApp m = new MainApp();
+            //System.Threading.Thread.Sleep(1000); // May fix a bug
             m.ShowDialog();
+
             Environment.Exit(0);
         }
 
